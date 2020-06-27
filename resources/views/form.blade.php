@@ -15,10 +15,10 @@
         <input id="cNome" name="cNome" /><br />
 
         <label for="cDataNasc">Data de Nascimento</label><br />
-        <input  type="date" id="cDataNasc" name="cDataNasc" /><br />
+        <input  type="date" id="cDataNasc" onblur="validaData()"name="cDataNasc" /><br />
 
         <label for="cEmail">E-Mail</label><br />
-        <input type="email"  id="cEmail" name="cEmail" size="30" required/><br />
+        <input type="email" id="cEmail" name="cEmail" size="30" required/><br />
 		
         <label for="cFoto">Foto</label><br />
         <input id="cFoto" name="cFoto" type="file"/><br />
@@ -30,5 +30,18 @@
 </div>
  
 @endsection
+
+<script>
+function validaData(){
+    let data = document.getElementById("cDataNasc").value
+    let dt = new Date();
+    let anoAtual = dt.getFullYear();
+    //let anoNasc = 
+    console.log(ano);
+    alert(data);
+}
+
+
+</script>
 
 {{-- @extends('rodape') --}}
