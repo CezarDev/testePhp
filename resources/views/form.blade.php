@@ -39,6 +39,12 @@ function validaData(){
     //let anoNasc = 
     console.log(ano);
     alert(data);
+
+//     var hoje = new Date();
+//    var nasc  = new Date(data);
+//    var idade = hoje.getFullYear() - nasc.getFullYear();
+//    var m = hoje.getMonth() - nasc.getMonth();
+//    if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())) idade--;
 }
 
 
